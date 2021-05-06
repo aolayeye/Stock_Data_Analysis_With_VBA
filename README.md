@@ -23,41 +23,49 @@ we utilized loops to determine the total volume of DQ stocks traded for 2018
 1. Format the output sheet on the "All Stocks Analysis" worksheet.
 2. Initialize an array of all tickers.
 3. Prepare for the analysis of tickers.
-* Initialize variables for the starting price and ending price.
-* Activate the data worksheet.
-* Find the number of rows to loop over.
+  * Initialize variables for the starting price and ending price.
+  * Activate the data worksheet.
+  * Find the number of rows to loop over.
 4. Loop through the tickers.
 5. Loop through rows in the data.
-* Find the total volume for the current ticker.
-*Find the starting price for the current ticker.
-* Find the ending price for the current ticker.
+  * Find the total volume for the current ticker.
+  * Find the starting price for the current ticker.
+  * Find the ending price for the current ticker.
 6. Output the data for the current ticker.
-* static formatting
-* conditionla formattiing
-* color formatting
+  * static formatting
+  * conditionla formattiing
+  * color formatting
 7. Run Button
 8. Run analysis for any year
 
 ## Results
-
+The general trend for the energy stocks for the two years analyzed show that 2017 was a generally positive year in contrast to 2018, where all stocks with the exception of ENPH and RUN had a negative return on investment.
+While DQ made a 199.4% return in 2017, it made a 62.6% loss in 2018. We may need to analyze more years for DQ to determine the trend.
+An initial recommendation would ENPH and RUN, since they show a consistent trend for the years analyzed.
+In geneal, two years worth of stock data is too small to decide on which stocks to invest in.
 
 ![All_Stocks_2017](https://user-images.githubusercontent.com/67847583/117246846-edef9080-ae02-11eb-8419-c34178f14cca.png)
 ![All_Stocks_2018](https://user-images.githubusercontent.com/67847583/117246860-f1831780-ae02-11eb-913c-5a328d4d34b8.png)
 
-
+While we began our analysis for the DQ stock, we refacored our code to achieve:
+  * scale: if we decided to analyze more years for more stocks in the future
+  * speed: our refactored code ran in 0.02 seconds less time than the original code
+  * maintainance: since we have a small code base it will be easy to maintain in the future
+  
+ ### Improved Code Logic
 ![Improved_Code_Logic_1](https://user-images.githubusercontent.com/67847583/117247736-73277500-ae04-11eb-9b9e-7a96cf14a0f6.png)
 ![Improved_Code_Logic_2](https://user-images.githubusercontent.com/67847583/117247747-77ec2900-ae04-11eb-8424-f6e7db3a3d69.png)
 
+### Improved Performance
+#### Original Code
+![Original_Code_Performance_2017](https://user-images.githubusercontent.com/67847583/117377255-766c4080-ae98-11eb-8f42-2b22fb79d6e8.png)
+![Original_Code_Performance_2018](https://user-images.githubusercontent.com/67847583/117377259-79ffc780-ae98-11eb-9729-e334a6a8d442.png)
+
+#### Refactored Code
 ![VBA_Challenge_2017](https://user-images.githubusercontent.com/67847583/117247811-905c4380-ae04-11eb-92b8-4e555a7e8585.png)
 ![VBA_Challenge_2018](https://user-images.githubusercontent.com/67847583/117247816-92be9d80-ae04-11eb-81ff-f2ed4ffe2551.png)
 
-
-
-
-
-
-### Code Performance
-Intial performance measures shows that our code ran for 0.82 seconds for 1 year. after refactoring and added extra functionalty for our code to process all stocks at the same time and format at run time, we got our code to run in 0.78 seconds
+Intial performance measures shows that our code ran for 0.96 seconds for 1 year. After refactoring and added extra functionalty for our code to process all stocks at the same time and format results at run time, we got our code to run in 0.78 seconds
 
 ![VBA_Challenge_2017](https://user-images.githubusercontent.com/67847583/117246156-b8967300-ae01-11eb-9ea8-470b184090c0.png)
 ![VBA_Challenge_2018](https://user-images.githubusercontent.com/67847583/117246172-c0561780-ae01-11eb-88c3-3e4545cbbcf6.png)
