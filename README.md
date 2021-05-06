@@ -67,7 +67,5 @@ While we began our analysis for the DQ stock, we refacored our code to achieve:
 
 Intial performance measures shows that our code ran for 0.96 seconds for 1 year. After refactoring and added extra functionalty for our code to process all stocks at the same time and format results at run time, we got our code to run in 0.78 seconds
 
-![VBA_Challenge_2017](https://user-images.githubusercontent.com/67847583/117246156-b8967300-ae01-11eb-9ea8-470b184090c0.png)
-![VBA_Challenge_2018](https://user-images.githubusercontent.com/67847583/117246172-c0561780-ae01-11eb-88c3-3e4545cbbcf6.png)
 
 ## Sumary
