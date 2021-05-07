@@ -75,21 +75,21 @@ Refactoring is the process of restructuring existing code without changing its e
 
 #### Advantages of Refactoring
 When code is refactored as a standard practice from when you begin writing, there are multiple adavantages that are realized:
- - Maintenance: Since refactored code is dynamically written and well commented and documented, it leads to reduced complexity, it is easier to read and understand. Thus down the line, code is easier to maintain, and new functionality can be easily added. 
- - Scale: It is easier to scale refactored code; case in point if we refactored our code to use dynamic arrays or used a list method to dermine that number of tickers, then we would never need to worry about:
+ 1. Maintenance: Since refactored code is dynamically written and well commented and documented, it leads to reduced complexity, it is easier to read and understand. Thus down the line, code is easier to maintain, and new functionality can be easily added. 
+ 2. Scale: It is easier to scale refactored code; case in point if we refactored our code to use dynamic arrays or used a list method to dermine that number of tickers, then we would never need to worry about:
    1. analyzing more than 12 tickers
    2. we would not need to manually initialize our ticker list
- - Speed: Generally refactored code achieves improved speeds when the code base is not too large
- - Reuse: When code is properly refactored, it can be easily reused
- - Removes Code Smells: Refatoring removes duplicate code, long classes or methods, variable mutations, contrived complexities, data clumps, dead code etc. By removing code smell, we are potentially preventing future bugs.
+ 3. Speed: Generally refactored code achieves improved speeds when the code base is not too large
+ 4. Reuse: When code is properly refactored, it can be easily reused
+ 5. Removes Code Smells: Refatoring removes duplicate code, long classes or methods, variable mutations, contrived complexities, data clumps, dead code etc. By removing code smell, we are potentially preventing future bugs.
 #### Disadvantages of Refactoring
-- Since refactoring often requires extracting code structure, data models, and intra-application dependencies to get back knowledge of an existing software system, it can be a time consuming and expensive process
-- Chances for costly mistakes are high since refactoring usually requires indepth knowledge of existing code
+1. Since refactoring often requires extracting code structure, data models, and intra-application dependencies to get back knowledge of an existing software system, it can be a time consuming and expensive process
+2. Chances for costly mistakes are high since refactoring usually requires indepth knowledge of existing code
 
 #### Refactoring the VBA Challenge
-- One clear advantage of refactoring the stock analysis code is our ability to process multiple stocks at the same. We also refactored our code to give us the flexibility of specifying the year we wish to analyze.
-- Our code is well commented, this makes it possible to follow through, understand and maintain the code in the future.
-- By refactoring our code we shaved 0.20 seconds from the initial code.
+1. One clear advantage of refactoring the stock analysis code is our ability to process multiple stocks at the same. We also refactored our code to give us the flexibility of specifying the year we wish to analyze.
+2. Our code is well commented, this makes it possible to follow through, understand and maintain the code in the future.
+3. By refactoring our code we shaved 0.20 seconds from the initial code.
 
 To get the full benefits of refactoring, my personal submission is that:
 1. Refactoring should be a standard coding practice, incorporated from day one
