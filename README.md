@@ -9,15 +9,15 @@ This analysis will help inform the decision of which green energy stock to inves
 4. If we wanted to analyze more stocks for multiple years, will our solution be able to handle that type of scale?
 
 ### Step 1: DQ Anlaysis for 2018
-The total daily volume and yearly return for each stock. Daily volume is the total number of shares traded throughout the day; it measures how actively a stock is traded. The yearly return is the percentage difference in price from the beginning of the year to the end of the year.
-we utilized loops to determine the total volume of DQ stocks traded for 2018
-1. Number of rows to loop over
+Our first step is to determine the total daily volume and yearly return for the DQ stock. Daily volume is the total number of shares traded throughout the day; it measures how actively a stock is traded. The yearly return is the percentage difference in price from the beginning of the year to the end of the year.
+We utilized loops to determine the total volume of DQ stocks traded for 2018
 
-### Step 2: Analyze a whole list of stocks.
-1. manually activate worksheet that contains stock data to analyze
-2. to loop over a list of stocks, we implemented an array solution 
-3. to loop through the different stocks, and the every row to determine the total volume of stocks, we implemented a nested loop 
-4. we leveraged existing DQ analysis code we craeted to determine volume traded and return for the year.
+### Step 2: Analyze a whole list of stocks for 2017 and 2018
+We expanded our code to analyze multiple stocks with the added flexibiity of selecting which year we want to analyze.
+1. We dynamically activated worksheet that contains stock data to analyze
+2. To loop over a list of stocks, we implemented an array solution 
+3. To loop through the different stocks, and the every row to determine the total volume of stocks, we implemented a nested loop 
+4. We leveraged existing DQ analysis code we created to determine volume traded and return for the year.
 
 ### Control Flow
 1. Format the output sheet on the "All Stocks Analysis" worksheet.
