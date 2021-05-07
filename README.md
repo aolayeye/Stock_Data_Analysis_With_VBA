@@ -5,7 +5,7 @@ The solution provided at the end of the analysis has been implemented in way tha
 This analysis will help inform the decision of which green energy stock to invest in. The goal is to use a data driven approach to decision making. We would use code to automate analysis so we can reuse the same code for any stock for any number of years. we would be able to answer the following questions:
 1. Is DQ stocks worth investing in?
 2. Are there other stocks as good as or better than DQ?
-  3. If Yes, can we diversify our investment portfolio
+   - If Yes, can we diversify our investment portfolio
 4. If we wanted to analyze more stocks for multiple years, will our solution be able to handle that type of scale?
 
 ### Step 1: DQ Anlaysis for 2018
@@ -16,7 +16,7 @@ We utilized loops to determine the total volume of DQ stocks traded for 2018
 We expanded our code to analyze multiple stocks with the added flexibiity of selecting which year we want to analyze.
 1. We dynamically activated worksheet that contains stock data to analyze
 2. To loop over a list of stocks, we implemented an array solution 
-  3. To loop through the different stocks, and the every row to determine the total volume of stocks, we implemented a nested loop 
+   - To loop through the different stocks, and the every row to determine the total volume of stocks, we implemented a nested loop 
 4. We leveraged existing DQ analysis code we created to determine volume traded and return for the year.
 
 ### Control Flow
