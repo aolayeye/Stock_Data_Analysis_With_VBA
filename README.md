@@ -68,3 +68,13 @@ While we began our analysis for the DQ stock, we refacored our code to achieve:
 Intial performance measures shows that our code ran for 0.97 seconds for 1 year. After refactoring and added extra functionalty for our code to process all stocks at the same time and format results at run time, we got our code to run in 0.79 seconds
 
 ## Sumary
+
+### Advantages of Refactoring
+When code is refactored as a standard practice from when you begin writing, there are multiple adavantages that are realized:
+ - Maintenance: Since refactored code is easier to understand, down the line, code is easier to maintain. Since our code is dynamically written and well documentated, it easy to mainatain and add new functionality in the future.
+ - Scale: It is easier to scale refactored code; case in point if we refactored our code to use dynamic arrays or used a list method to dermine that number of tickers, then we would never need to worry about:
+   1. analyzing more than 12 tickers
+   2. we would not need to manually initialize our ticker list
+ - Speed: Generally refactored code achieves improved speeds when the code base is not too large
+ - Reuse: When code is properly refactored, it can be easily reused
+ ### Disadvantages of Refactoring
