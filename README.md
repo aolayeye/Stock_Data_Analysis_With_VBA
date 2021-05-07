@@ -23,18 +23,18 @@ We expanded our code to analyze multiple stocks with the added flexibiity of sel
 1. Format the output sheet on the "All Stocks Analysis" worksheet.
 2. Initialize an array of all tickers.
 3. Prepare for the analysis of tickers.
-  * Initialize variables for the starting price and ending price.
-  * Activate the data worksheet.
-  * Find the number of rows to loop over.
+   * Initialize variables for the starting price and ending price.
+   * Activate the data worksheet.
+   * Find the number of rows to loop over.
 4. Loop through the tickers.
 5. Loop through rows in the data.
-  * Find the total volume for the current ticker.
-  * Find the starting price for the current ticker.
-  * Find the ending price for the current ticker.
+   * Find the total volume for the current ticker.
+   * Find the starting price for the current ticker.
+   * Find the ending price for the current ticker.
 6. Output the data for the current ticker.
-  * static formatting
-  * conditionla formattiing
-  * color formatting
+   * static formatting
+   * conditionla formattiing
+   * color formatting
 7. Run Button
 8. Run analysis for any year
 
