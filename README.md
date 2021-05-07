@@ -88,7 +88,8 @@ When code is refactored as standard practice from when you begin writing, multip
 #### Refactoring the VBA Challenge
 1. One clear advantage of refactoring the stock analysis code is our ability to process multiple stocks simultaneously. We also refactored our code to give us the flexibility of specifying the year we wish to analyze.
 2. Our code is well commented; this makes it possible to follow through, understand and maintain the code in the future.
-3. By refactoring our code, we shaved 0.20 seconds from the initial code.
+3. We adopted a dynamic approach to determine the number of rows to loop through, and we utilized a nested loop structure that would allow our code to scale easily in the future.
+4. By refactoring our code, we shaved 0.20 seconds from the initial code.
 
 If we want to get the full benefits of refactoring, my submission is that:
 1. Refactoring should be a standard coding practice, incorporated from day one
