@@ -8,7 +8,7 @@ This analysis will help inform the decision of which green energy stock to inves
 3. If Yes, can we diversify our investment portfolio
 4. If we wanted to analyze more stocks for multiple years, will our solution be able to handle that type of scale?
 
-## Step 1: DQ Anlaysis for 2018
+### Step 1: DQ Anlaysis for 2018
 The total daily volume and yearly return for each stock. Daily volume is the total number of shares traded throughout the day; it measures how actively a stock is traded. The yearly return is the percentage difference in price from the beginning of the year to the end of the year.
 we utilized loops to determine the total volume of DQ stocks traded for 2018
 1. Number of rows to loop over
@@ -52,7 +52,7 @@ While we began our analysis for the DQ stock, we refacored our code to achieve:
   * speed: our refactored code ran in 0.02 seconds less time than the original code
   * maintainance: since we have a small code base it will be easy to maintain in the future
   
- ### Improved Code Logic
+### Improved Code Logic
 ![Improved_Code_Logic_1](https://user-images.githubusercontent.com/67847583/117247736-73277500-ae04-11eb-9b9e-7a96cf14a0f6.png)
 ![Improved_Code_Logic_2](https://user-images.githubusercontent.com/67847583/117247747-77ec2900-ae04-11eb-8424-f6e7db3a3d69.png)
 
@@ -69,11 +69,11 @@ Intial performance measures shows that our code ran for 0.97 seconds for 1 year.
 
 ## Sumary
 
-## Refactoring
+### Refactoring
 
 Refactoring is the process of restructuring existing code without changing its external behavior. Refactoring is intended to improve the design, structure, and/or implementation of the software (its non-functional attributes), while preserving its functionality. 
 
-### Advantages of Refactoring
+#### Advantages of Refactoring
 When code is refactored as a standard practice from when you begin writing, there are multiple adavantages that are realized:
  - Maintenance: Since refactored code is dynamically written and well commented and documented, it leads to reduced complexity, it is easier to read and understand. Thus down the line, code is easier to maintain, and new functionality can be easily added. 
  - Scale: It is easier to scale refactored code; case in point if we refactored our code to use dynamic arrays or used a list method to dermine that number of tickers, then we would never need to worry about:
@@ -82,11 +82,11 @@ When code is refactored as a standard practice from when you begin writing, ther
  - Speed: Generally refactored code achieves improved speeds when the code base is not too large
  - Reuse: When code is properly refactored, it can be easily reused
  - Removes Code Smells: Refatoring removes duplicate code, long classes or methods, variable mutations, contrived complexities, data clumps, dead code etc. By removing code smell, we are potentially preventing future bugs.
-### Disadvantages of Refactoring
+#### Disadvantages of Refactoring
 - Since refactoring often requires extracting code structure, data models, and intra-application dependencies to get back knowledge of an existing software system, it can be a time consuming and expensive process
 - Chances for costly mistakes are high since refactoring usually requires indepth knowledge of existing code
 
-### Refactoring the VBA Challenge
+#### Refactoring the VBA Challenge
 - One clear advantage of refactoring the stock analysis code is our ability to process multiple stocks at the same. We also refactored our code to give us the flexibility of specifying the year we wish to analyze.
 - Our code is well commented, this makes it possible to follow through, understand and maintain the code in the future.
 - By refactoring our code we shaved 0.20 seconds from the initial code.
