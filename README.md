@@ -33,7 +33,7 @@ We expanded our code to analyze multiple stocks with the added flexibiity of sel
    * Find the ending price for the current ticker.
 6. Output the data for the current ticker.
    * static formatting
-   * conditionla formattiing
+   * conditional formattiing
    * color formatting
 7. Run Button
 8. Run analysis for any year
