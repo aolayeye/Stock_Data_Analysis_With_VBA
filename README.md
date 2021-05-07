@@ -1,8 +1,8 @@
 # stock-analysis
 # Overview of Project
-The green stocks analysis is about investigation whether an investment in DAQO New Energy corporation stocks will be a good investment. The analysis looks at DQ's stock for the year 2017 and 2018. As a way to provide further insights into how DQ compares with other stocks, and determine whether an investment in any other stock will be worth it; this stock analysis expands to all stocks for 2017 and 2018. the analysis quickly expands to include all stocks for 2017 and 2018.
-The solution provided at the end of the analysis has been implemented in way that allows scaling, meaning: if we decide to analyze the more rows of stock and or more years, we would be able to do so with the click of a button. Using code to automate tasks decreases the chance of errors and reduces the time needed to run analyses, especially if they need to be done repeatedly.
-This analysis will help inform the decision of which green energy stock to invest in. The goal is to use a data driven approach to decision making. we would use code to automate analysis so we can reuse the same code for any stock for any number of years. we would be able to answer the following questions:
+The green stocks analysis project is about investigating whether the DAQO New Energy corporation stock will be a good investment. The analysis looks at DQ's stock for the years 2017 and 2018. As a way to provide further insights into how DQ compares with other stocks, and determine whether an investment in any other stock will be worth it; this stock analysis expands to all stocks for 2017 and 2018.
+The solution provided at the end of the analysis has been implemented in way that allows scaling, meaning: if we decide to analyze the more rows of stocks for different years, we would be able to do so with the click of a button. Using code to automate tasks decreases the chance of errors and reduces the time needed to run analyses, especially if they need to be done repeatedly.
+This analysis will help inform the decision of which green energy stock to invest in. The goal is to use a data driven approach to decision making. We would use code to automate analysis so we can reuse the same code for any stock for any number of years. we would be able to answer the following questions:
 1. Is DQ stocks worth investing in?
 2. Are there other stocks as good as or better than DQ?
 3. If Yes, can we diversify our investment portfolio
@@ -69,12 +69,34 @@ Intial performance measures shows that our code ran for 0.97 seconds for 1 year.
 
 ## Sumary
 
+## Refactoring
+
+Refactoring is the process of restructuring existing code without changing its external behavior. Refactoring is intended to improve the design, structure, and/or implementation of the software (its non-functional attributes), while preserving its functionality. 
+
 ### Advantages of Refactoring
 When code is refactored as a standard practice from when you begin writing, there are multiple adavantages that are realized:
- - Maintenance: Since refactored code is easier to understand, down the line, code is easier to maintain. Since our code is dynamically written and well documentated, it easy to mainatain and add new functionality in the future.
+ - Maintenance: Since refactored code is dynamically written and well commented and documented, it leads to reduced complexity, it is easier to read and understand. Thus down the line, code is easier to maintain, and new functionality can be easily added. 
  - Scale: It is easier to scale refactored code; case in point if we refactored our code to use dynamic arrays or used a list method to dermine that number of tickers, then we would never need to worry about:
    1. analyzing more than 12 tickers
    2. we would not need to manually initialize our ticker list
  - Speed: Generally refactored code achieves improved speeds when the code base is not too large
  - Reuse: When code is properly refactored, it can be easily reused
- ### Disadvantages of Refactoring
+ - Removes Code Smells: Refatoring removes duplicate code, long classes or methods, variable mutations, contrived complexities, data clumps, dead code etc. By removing code smell, we are potentially preventing future bugs.
+### Disadvantages of Refactoring
+- Since refactoring often requires extracting code structure, data models, and intra-application dependencies to get back knowledge of an existing software system, it can be a time consuming and expensive process
+- Chances for costly mistakes are high since refactoring usually requires indepth knowledge of existing code
+
+### Refactoring the VBA Challenge
+- One clear advantage of refactoring the stock analysis code is our ability to process multiple stocks at the same. We also refactored our code to give us the flexibility of specifying the year we wish to analyze.
+- Our code is well commented, this makes it possible to follow through, understand and maintain the code in the future.
+- By refactoring our code we shaved 0.20 seconds from the initial code.
+
+To get the full benefits of refactoring, my personal submission is that:
+1. Refactoring should be a standard coding practice, incorporated from day one
+2. Careful thought should be given to the question of when to refactor. Thoughts should be given to the following:
+   - If the chances for enhancements are high, it may be a good idea to refactor your code beforehand
+   - Sometimes bad patterns like tight coupling, duplicate code, long methods, large classes, etc. are detected in the code; the code should be refactored in this case.
+   - Fixing too many bugs could be a result of code smells, in this case refactoring will be a preferred option to bug fixing.
+
+3. It is also important to not that stable code should not refactored
+4. Refactoring should not be done when the cost of refactoring is much higher than the cost rewriting from scratch  
